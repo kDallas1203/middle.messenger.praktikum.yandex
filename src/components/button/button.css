@@ -1,0 +1,11 @@
+.app-btn {
+  @apply text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 p-3 rounded-lg;
+
+  &.app-btn--block {
+    @apply block w-full
+  }
+
+  &.app-btn--link {
+    @apply text-blue-600 hover:text-blue-500 active:text-blue-700 bg-transparent
+  }
+}

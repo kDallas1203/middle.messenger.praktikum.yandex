@@ -1,0 +1,20 @@
+{{!< base}} 
+
+<div class="flex justify-center items-center min-h-screen py-6">
+  <div class="shadow-lg px-7 pt-12 pb-7 rounded-xl min-w-[340px]">
+    <h1 class="text-center font-medium text-xl mb-10">Регистрация</h1>
+    <form class="auth-form__form">
+      {{>'form-item/form-item' label="Почта" name="email" required=true}}
+      {{>'form-item/form-item' label="Логин" name="login" required=true}}
+      {{>'form-item/form-item' label="Имя" name="first_name" required=true}}
+      {{>'form-item/form-item' label="Фамилия" name="second_name" required=true}}
+      {{>'form-item/form-item' label="Телефон" name="phone" required=true}}
+      {{>'form-item/form-item' label="Пароль" name="password" required=true}}
+      {{>'form-item/form-item' label="Пароль (еще раз)" name="password_repeat" required=true}}
+      <div class="mt-12">
+        {{>'button/button' value="Зарегистрироваться" full=true}}
+        {{>'button/button' value="Войти" full=true typeLink=true}}
+      </div>
+    </form>
+  </div>
+</div>

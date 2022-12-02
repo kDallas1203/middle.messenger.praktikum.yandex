@@ -1,0 +1,11 @@
+<div class="form-item">
+  <label class="form-item__label" for="{{name}}">{{label}}</label>
+  <input 
+  class="form-item__input" 
+  type="{{#if type}}{{type}}{{else}}text{{/if}}" 
+  name="{{name}}" 
+  id={{name}} 
+  placeholder="{{label}}"
+  {{#required}}required{{/required}} 
+  />
+</div>

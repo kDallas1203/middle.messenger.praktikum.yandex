@@ -1,4 +1,4 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
-}
+@import './taliwind.css';
+@import './components/button/button.css';
+@import './components/form-item/form-item.css';
+@import './components/card/cars.css'

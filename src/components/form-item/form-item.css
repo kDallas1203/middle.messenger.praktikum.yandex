@@ -1,0 +1,16 @@
+.form-item {
+  @apply flex flex-col mb-4;
+
+  & .form-item__label {
+    @apply text-gray-400 text-[9px];
+  }
+
+  & .form-item__input {
+    @apply text-sm outline-none border-b border-b-gray-400 py-2;
+
+    &:focus {
+      @apply border-b-blue-600;
+    }
+  }
+}
+
