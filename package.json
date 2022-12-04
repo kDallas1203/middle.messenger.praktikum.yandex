@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel ./src/index.hbs --no-cache",
-    "build": "parcel build",
-    "serve": "parcel build && node serve.js"
+    "build": "parcel build ./src/index.hbs && node serve.js"
   },
   "keywords": [],
   "author": "",
