@@ -2,8 +2,9 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel build ./src/index.hbs && node serve.js",
-    "dev": "parcel ./src/index.hbs --no-cache"
+    "start": "npm run build && node serve.js",
+    "dev": "parcel ./src/index.hbs --no-cache",
+    "build": "parcel build ./src/index.hbs"
   },
   "keywords": [],
   "author": "",
