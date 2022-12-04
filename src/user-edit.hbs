@@ -1,0 +1,32 @@
+{{!< base}} 
+<div class="flex min-h-screen">
+  <div class="flex items-center bg-neutral-50 px-5 border-r border-r-neutral-100">
+    <a href="./user-settings.hbs">
+      <img src="./assets/back.svg" />
+    </a>
+  </div>
+  <div class="w-full flex items-center justify-center flex-col">
+    <div class="mb-16">
+      {{> avatar userName="Иван"}}
+    </div>
+
+    <div class="min-w-[510px]">
+      <form>
+        <div class="mb-16">
+          {{> "settings-list/settings-item-input" label="Почта" value="pochta@yandex.ru" name="email"}}
+          {{> "settings-list/settings-item-input" label="Логин" value="ivanivanov" name="login"}}
+          {{> "settings-list/settings-item-input" label="Имя" value="Иван" name="first_name"}}
+          {{> "settings-list/settings-item-input" label="Фамилия" value="Иванов" name="second_name"}}
+          {{> "settings-list/settings-item-input" label="Имя в чате" value="Иван" name="display_name"}}
+          {{> "settings-list/settings-item-input" label="Телефон" value="+7 (909) 967 30 30" name="phone"}}
+        </div>
+
+        <div class="mt w-2/3 mx-auto">
+          <a href="./user-settings.hbs">
+            {{> 'button/button' value="Сохранить" full=true}}
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>

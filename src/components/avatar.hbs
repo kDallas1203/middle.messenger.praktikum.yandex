@@ -1,0 +1,10 @@
+<div>
+  <div class="w-[130px] h-[130px] rounded-full bg-gray-100 flex justify-center items-center">
+    {{#if url}}
+    <img src="{{url}}" alt="Avatar">
+    {{else}}
+    <span class="text-4xl font-medium">{{userName}}</span>
+    {{/if}}
+  </div>
+  <div class="text-center font-semibold mt-5">{{userName}}</div>
+</div>
