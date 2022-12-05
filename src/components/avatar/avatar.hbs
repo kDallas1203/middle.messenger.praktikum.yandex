@@ -1,0 +1,15 @@
+<div>
+  <div class="user-avatar">
+    <form>
+      <input type="file" name="avatar" id="avatar" hidden>
+      {{#if url}}
+      <img src="{{url}}" alt="Avatar">
+      {{else}}
+      {{!-- Во втором спринте добавить helper, чтобы обрезать имя до первого символа --}}
+      <span class="text-4xl font-medium">{{userName}}</span>
+      {{/if}}
+      <label for="avatar" class="user-avatar__label">Поменять аватар</label>
+    </form>
+  </div>
+  <div class="text-center font-semibold mt-5">{{userName}}</div>
+</div>

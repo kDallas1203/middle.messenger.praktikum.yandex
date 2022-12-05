@@ -3,6 +3,7 @@
 @import "./components/form-item/form-item.css";
 @import "./components/card/cars.css";
 @import "./components/settings-list/settings-item.css";
+@import "./components/avatar/avatar.css";
 
 .app-link {
   @apply text-blue-600;
