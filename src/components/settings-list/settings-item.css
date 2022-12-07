@@ -8,8 +8,9 @@
   & .settings-item__input {
     @apply text-neutral-400 text-right outline-none;
 
-    &:active, &:focus {
-      @apply text-black
+    &:active,
+    &:focus {
+      @apply text-black;
     }
   }
 }
