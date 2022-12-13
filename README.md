@@ -10,4 +10,4 @@
 
 `npm run start` - запустить чат в production режиме  
 `npm run dev` - запустить чат в developer режиме  
-`npm run build` - собрать проект  
+`npm run build` - собрать проект
