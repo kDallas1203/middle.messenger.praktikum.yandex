@@ -1,0 +1,11 @@
+.user-avatar {
+  @apply w-[130px] h-[130px] rounded-full bg-gray-100 flex justify-center items-center relative overflow-hidden;
+
+  & .user-avatar__label {
+    @apply absolute hidden bg-black/50 w-[130px] h-[130px] top-0 left-0 text-white items-center text-center cursor-pointer;
+  }
+
+  &:hover .user-avatar__label {
+    @apply flex;
+  }
+}

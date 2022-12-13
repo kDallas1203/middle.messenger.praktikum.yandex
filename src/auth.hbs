@@ -1,0 +1,15 @@
+{{!< base}} <div class="flex justify-center items-center h-screen py-8">
+  <div class="shadow-lg px-7 pt-12 pb-7 rounded-xl min-w-[340px]">
+    <h1 class="text-center font-medium text-xl mb-10">Вход</h1>
+    <form class="auth-form__form">
+      {{>'form-item/form-item' label="Логин" name="login" required=true}}
+      {{>'form-item/form-item' label="Пароль" name="password" type="password" required=true}}
+      <div class="mt-12">
+        {{>'button/button' value="Авторизоваться" full=true}}
+        <a href="./register.hbs" class="app-link text-center block mt-3">
+          Еще нет аккаунта?
+        </a>
+      </div>
+    </form>
+  </div>
+  </div>

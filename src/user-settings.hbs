@@ -1,0 +1,36 @@
+{{!< base}} 
+<div class="flex min-h-screen">
+  <div class="flex items-center bg-neutral-50 px-5 border-r border-r-neutral-100">
+    <a href="./index.hbs">
+      <img src="./assets/back.svg" />
+    </a>
+  </div>
+  <div class="w-full flex items-center justify-center flex-col">
+    <div class="mb-16">
+        {{> "avatar/avatar" userName="Иван"}}
+    </div>
+
+    <div class="min-w-[510px]">
+      <div class="mb-16">
+        {{> "settings-list/settings-item" label="Почта" value="pochta@yandex.ru"}}
+        {{> "settings-list/settings-item" label="Логин" value="ivanivanov"}}
+        {{> "settings-list/settings-item" label="Имя" value="Иван"}}
+        {{> "settings-list/settings-item" label="Фамилия" value="Иванов"}}
+        {{> "settings-list/settings-item" label="Имя в чате" value="Иван"}}
+        {{> "settings-list/settings-item" label="Телефон" value="+7 (909) 967 30 30"}}
+      </div>
+
+      <div class="mt">
+        <div class="settings-item">
+          <a href="./user-edit.hbs" class="app-link">Изменить данные</a>
+        </div>
+        <div class="settings-item">
+          <a href="./user-password.hbs" class="app-link">Изменить пароль</a>
+        </div>
+        <div class="settings-item">
+          <a href="#" class="text-red-600">Выйти</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,16 @@
+.settings-item {
+  @apply flex justify-between border-b border-b-gray-200 py-2 last:border-b-0;
+
+  & .settings-item__value {
+    @apply text-neutral-400;
+  }
+
+  & .settings-item__input {
+    @apply text-neutral-400 text-right outline-none;
+
+    &:active,
+    &:focus {
+      @apply text-black;
+    }
+  }
+}
